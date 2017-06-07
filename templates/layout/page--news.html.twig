@@ -1,0 +1,42 @@
+<div class="layout-container">
+
+  {% if page.menu_top %}
+    <div id="menu-top" class="nav">
+      {{ page.menu_top }}
+    </div>
+  {% endif %}
+
+  {% if page.header %}
+    <header id="main-header" role="banner">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {% if page.content %}
+    <div id="highlighted"><div class="highlighted-top">
+      {{ page.content }}
+    </div></div>
+  {% endif %}
+
+
+    {% if page.highlighted_bottom %}
+      <div id="layout-highlighted"><div class="highlighted-bottom">
+        {{ page.highlighted_bottom }}
+      </div></div>
+    {% endif %}
+
+
+
+  {% if page.footer_1 %}
+    <footer id="footer-1" role="contentinfo">
+      {{ page.footer_1 }}
+    </footer>
+  {% endif %}
+
+  {% if page.footer_2 %}
+    <footer id="footer-2" role="contentinfo">
+      {{ page.footer_2 }}
+    </footer>
+  {% endif %}
+
+</div>

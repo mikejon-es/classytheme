@@ -1,0 +1,63 @@
+<div class="layout-container">
+
+  {% if page.menu_top %}
+    <div id="menu-top" class="nav">
+      {{ page.menu_top }}
+    </div>
+  {% endif %}
+
+  {% if page.header %}
+    <header id="main-header" role="banner">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {% if page.home_alerts %}
+    <div class="home-alerts"><div id="home-alerts" class="alerts">
+      {{ page.home_alerts }}
+    </div></div>
+  {% endif %}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    {% if page.home_section_1 %}
+      <div class="home1"><div id="home-section-1" class="section-home1 home-section">
+        {{ page.home_section_1 }}
+      </div></div>
+    {% endif %}
+    {% if page.home_section_2 %}
+      <div class="home2"><div id="home-section-2" class="section-home2 home-section">
+        {{ page.home_section_2 }}
+      </div></div>
+    {% endif %}
+    {% if page.home_section_3 %}
+      <div class="home3"><div id="home-section-3" class="section-home3 home-section">
+        {{ page.home_section_3 }}
+      </div></div>
+    {% endif %}
+    {% if page.home_section_4 %}
+      <div class="home4"><div id="home-section-4" class="section-home4 home-section">
+        {{ page.home_section_4 }}
+      </div></div>
+    {% endif %}
+	{% if page.home_section_5 %}
+      <div class="home5"><div id="home-section-5" class="section-home5 home-section">
+        {{ page.home_section_5 }}
+      </div></div>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer_1 %}
+    <footer id="footer-1" role="contentinfo">
+      {{ page.footer_1 }}
+    </footer>
+  {% endif %}
+  {% if page.footer_2 %}
+    <footer id="footer-2" class=“footer-inline” role="contentinfo">
+      {{ page.footer_2 }}
+    </footer>
+  {% endif %}
+
+</div>

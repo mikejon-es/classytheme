@@ -1,0 +1,28 @@
+name: Faith Classy
+type: theme
+description: 'This is a subtheme based on Classy.'
+core: 8.x
+base theme: classy
+
+regions:
+  menu_top: Menu top
+  header: Header
+  home_alerts: Homepage special alerts
+  home_section_1: Homepage section 1
+  home_section_2: Homepage section 2
+  home_section_3: Homepage section 3
+  home_section_4: Homepage section 4
+  home_section_5: Homepage section 5
+  landing_section_1: Landing section 1
+  landing_section_2: Landing section 2
+  landing_section_3: Landing section 3
+  landing_section_4: Landing section 4
+  highlighted: Interior header 
+  content: Inteior content
+  sidebar_right: Interior sidebar right
+  highlighted_bottom: Interior highlighted bottom
+  footer_1: Footer 1
+  footer_2: Footer 2
+
+libraries:
+  - classytheme/global-styling

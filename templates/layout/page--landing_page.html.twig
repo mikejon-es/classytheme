@@ -1,0 +1,58 @@
+<div class="layout-container">
+
+  {% if page.menu_top %}
+    <div id="menu-top" class="nav">
+      {{ page.menu_top }}
+    </div>
+  {% endif %}
+
+  {% if page.header %}
+    <header id="main-header" role="banner">
+      {{ page.header }}
+    </header>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <div id="highlighted">
+      {{ page.highlighted }}
+    </div>
+  {% endif %}
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+
+    {% if page.landing_section_1 %}
+     <div class="wrapper1"><div id="landing-section-1" class="section1 landing-section">
+        {{ page.landing_section_1 }}
+      </div></div>
+    {% endif %}
+    {% if page.landing_section_2 %}
+      <div class="wrapper2"><div id="landing-section-2" class="section2 landing-section">
+        {{ page.landing_section_2 }}
+      </div></div>
+    {% endif %}
+    {% if page.landing_section_3 %}
+      <div class="wrapper3"><div id="landing-section-3" class="section3 landing-section">
+        {{ page.landing_section_3 }}
+      </div></div>
+    {% endif %}
+    {% if page.landing_section_4 %}
+      <div class="wrapper4"><div id="landing-section-4" class="section4 landing-section">
+        {{ page.landing_section_4 }}
+      </div></div>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer_1 %}
+    <footer id="footer-1" role="contentinfo">
+      {{ page.footer_1 }}
+    </footer>
+  {% endif %}
+  {% if page.footer_2 %}
+    <footer id="footer-2" role="contentinfo">
+      {{ page.footer_2 }}
+    </footer>
+  {% endif %}
+
+</div>

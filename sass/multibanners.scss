@@ -1,0 +1,138 @@
+// Import sass partials.
+@import "variables/variables";
+
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+
+@include breakpoint(min-width 1000px) {
+
+  .view-multibanner-default.view-display-id-block_front {
+
+    // CUSTOM LAYOUT FOR LANSING DIOCESE
+    .multibanner-total-6 {
+
+      .multibanner-column-1 {
+        width: percentage(3/5) !important;
+      }
+
+      .multibanner-column-2 {
+        width: percentage(2/5) !important;
+
+        .multibanner-item {
+          width: percentage(1/2);
+        }
+
+        // ALLOWS A WIDER RECT BANNER THAT'S 1/2
+        // THE HEIGHT OF THE OTHER SQUARE BANNERS
+        .multibanner-count-4 {
+        width: 100% !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@include breakpoint(max-width 1000px) {
+
+  .view-multibanner-default.view-display-id-block_front {
+
+    // CUSTOM LAYOUT FOR LANSING DIOCESE
+    .multibanner-total-6 {
+
+      .multibanner-item {
+      margin-bottom: 24px;
+      }
+
+    }
+
+  }
+
+}
+
+
+@include breakpoint(max-width 1000px) {
+  .view-multibanner-default.view-display-id-block_flex {
+    .multibanner-total-3,
+    .multibanner-total-4,
+    .multibanner-total-5 {
+      li {
+        width: 100% !important;
+      }
+      li:first-child .banner-content .banner-content-inner .field--name-name {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+
+.view-multibanner-default {
+  background: transparent;
+  margin: -5px;
+}
+
+.view-multibanner-default.view-display-id-block_flex .multibanner li {
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.view-multibanner-default.view-display-id-block_flex .field--name-name {
+  font-size: 1.5em;
+  white-space: normal;
+  overflow: visible;
+  -ms-text-overflow: initial;
+  -o-text-overflow: initial;
+  text-overflow: initial;
+  line-height: 1em;
+}
+
+.view-multibanner-default.view-display-id-block_flex li .banner-content-inner {
+  margin: 5px;
+}
+
+.view-multibanner-default.view-display-id-block_flex {
+  .multibanner-total-7,
+  .multibanner-total-8,
+  .multibanner-total-9 {
+    .field--name-name {
+      font-size: 1.25em;
+    }
+  }
+}
+
+.view-multibanner-default.view-display-id-block_flex .multibanner-total-3 li {
+  width: 33.1%;
+  &:first-child {
+    width: 66.7%;
+  }
+}
+
+.view-multibanner-default.view-display-id-block_flex .multibanner-total-5 li {
+  width: 24.825%;
+  &:first-child {
+    width: 50.25%;
+  }
+}
+
+.view-multibanner-default.view-display-id-block_flex .multibanner-total-7 li {
+  width: 19.85%;
+  &:first-child {
+    width: 40.25%;
+  }
+}
+
+.view-multibanner-default a {
+  color: #ffffff; }
+
+.view-multibanner-default a:active {
+  color: #ffffff; }
+
+.view-multibanner-default a:hover {
+    text-shadow: 0 2px 6px rgba(0,0,0,.9);
+  color: #edf0f0;
+}
